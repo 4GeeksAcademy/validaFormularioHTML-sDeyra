@@ -1,201 +1,218 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTMLForm</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-  </head>
-  <body>
+</head>
 
-    <div class="HTMLForm p-5">
+<body>
+    <form>
 
-    <div class="card">
-    <div class="card-body">
+        <div class="HTMLForm p-5">
 
-        <div class="titulo">
-            <h1 class="card-titule">Payment Form Example</h1>
-        </div>
+            <div class="card">
+                <div class="card-body">
 
-        <div class="alerta">
-            <div class="alert alert-danger" role="alert">
-                Some fields are missing
-            </div>
-        </div>
-        <form class="row g-3 needs-validation" novalidate></form>
-
-        <div class="row-1 row g-3">
-            <div class="col-md-5">
-                <label for="validationCustom01" class="form-label">Card #</label>
-                <input type="text"class="form-control" id="validationCustom01" value="" required placeholder="XXXXXXXXXXXXXXXXX">
-                <div class="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom02" class="form-label">CVC #</label>
-                <input type="text" class="form-control" id="validationCustom02" value="" required placeholder="0000">
-                <div class="valid-feedback">
-                 Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Amount</label>
-                <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-dollar-sign"></i></span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="Amount">
-                    <div class="valid-feedback">
-                    Looks good!
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row-2 row g-3">
-            <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">First Name</label>
-                <input type="text"class="form-control" id="validationCustom03" value="" required>
-                <div class="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom04" class="form-label">Last Name</label>
-                <input type="text"class="form-control" id="validationCustom04" value="" required>
-                <div class="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-        </div>
-
-        <div class="fila-3 row g-3">
-            <div class="col-md-6">
-                <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city" value="">
-                <div class="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <label for="state" class="form-label">State</label>
-                <select class="form-select" id="state" required>
-                <option selected disabled value="">Choose...</option>
-                <option>Aguascalientes</option>
-                <option>Baja California</option>
-                <option>Baja California Sur</option>
-                <option>Campeche</option>
-                <option>Chiapas</option>
-                <option>Chihuahua</option>
-                <option>Ciudad de México</option>
-                <option>Coahuila</option>
-                <option>Colima</option>
-                <option>Durango</option>
-                <option>Estado de México</option>
-                <option>Guanajuato</option>
-                <option>Guerrero</option>
-                <option>Hidalgo</option>
-                <option>Jalisco</option>
-                <option>Michoacán</option>
-                <option>Morelos</option>
-                <option>Nayarit</option>
-                <option>Nuevo León</option>
-                <option>Oaxaca</option>
-                <option>Puebla</option>
-                <option>Querétaro</option>
-                <option>Quintana Roo</option>
-                <option>San Luis Potosí</option>
-                <option>Sinaloa</option>
-                <option>Sonora</option>
-                <option>Tabasco</option>
-                <option>Tamaulipas</option>
-                <option>Tlaxcala</option>
-                <option>Veracruz</option>
-                <option>Yucatán</option>
-                <option>Zacatecas</option>
-                </select>
-                <div class="invalid-feedback">
-                Please select a valid state.
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <label for="postalCode" class="form-label">Postal Code</label>
-                <input type="text" class="form-control" id="postalCode" value="">
-                <div class="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-        </div>
-
-        <div class="fila-4 row g-3">
-            <div class="fila-4-left col-md-6">
-                <div class="we-accept">
-                    <p class="fw-normal">We accept</p>
-                </div>
-
-                <div class="botones bg-secondary d-inline-flex rounded ps-2">
-                <div class="d-flex">
-
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                        <label class="form-check-label" for="radioDefault1">
-                            <i class="fa-solid fa-credit-card text-white"></i>
-                        </label>
+                    <div class="titulo">
+                        <h1 class="card-titule">Payment Form Example</h1>
                     </div>
 
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
-                        <label class="form-check-label" for="radioDefault1">
-                            <i class="fa-solid fa-credit-card text-white"></i>
-                        </label>
+                    <div class="alerta">
+                        <div class="alert alert-danger" role="alert">
+                            Some fields are missing
+                        </div>
+                    </div>
+                    <form class="row g-3 needs-validation" novalidate></form>
+
+                    <div class="row-1 row g-3">
+                        <div class="col-md-5">
+                            <label for="validationCustom01" class="form-label">Card #</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required
+                                placeholder="XXXXXXXXXXXXXXXXX">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom02" class="form-label">CVC #</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required
+                                placeholder="0000">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Amount</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend"><i
+                                        class="fa-solid fa-dollar-sign"></i></span>
+                                <input type="text" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required placeholder="Amount">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
-                        <label class="form-check-label" for="radioDefault1">
-                            <i class="fa-solid fa-credit-card text-white"></i>
-                        </label>
+                    <div class="row-2 row g-3">
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="validationCustom03" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="validationCustom04" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
-                        <label class="form-check-label" for="radioDefault1">
-                            <i class="fa-solid fa-credit-card text-white"></i>
-                        </label>
+
+                    <div class="fila-3 row g-3">
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" value="">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Aguascalientes</option>
+                                <option>Baja California</option>
+                                <option>Baja California Sur</option>
+                                <option>Campeche</option>
+                                <option>Chiapas</option>
+                                <option>Chihuahua</option>
+                                <option>Ciudad de México</option>
+                                <option>Coahuila</option>
+                                <option>Colima</option>
+                                <option>Durango</option>
+                                <option>Estado de México</option>
+                                <option>Guanajuato</option>
+                                <option>Guerrero</option>
+                                <option>Hidalgo</option>
+                                <option>Jalisco</option>
+                                <option>Michoacán</option>
+                                <option>Morelos</option>
+                                <option>Nayarit</option>
+                                <option>Nuevo León</option>
+                                <option>Oaxaca</option>
+                                <option>Puebla</option>
+                                <option>Querétaro</option>
+                                <option>Quintana Roo</option>
+                                <option>San Luis Potosí</option>
+                                <option>Sinaloa</option>
+                                <option>Sonora</option>
+                                <option>Tabasco</option>
+                                <option>Tamaulipas</option>
+                                <option>Tlaxcala</option>
+                                <option>Veracruz</option>
+                                <option>Yucatán</option>
+                                <option>Zacatecas</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="postalCode" class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="postalCode" value="">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="fila-4 row g-3">
+                        <div class="fila-4-left col-md-6">
+                            <div class="we-accept">
+                                <p class="fw-normal">We accept</p>
+                            </div>
+
+                            <div class="botones bg-secondary d-inline-flex rounded ps-2">
+                                <div class="d-flex">
+
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault1">
+                                        <label class="form-check-label" for="radioDefault1">
+                                            <i class="fa-solid fa-credit-card text-white"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault2">
+                                        <label class="form-check-label" for="radioDefault1">
+                                            <i class="fa-solid fa-credit-card text-white"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault3">
+                                        <label class="form-check-label" for="radioDefault1">
+                                            <i class="fa-solid fa-credit-card text-white"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault4">
+                                        <label class="form-check-label" for="radioDefault1">
+                                            <i class="fa-solid fa-credit-card text-white"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="fila-4-right col-md-6">
+                            <div class="Massage">
+
+
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer bg-light">
+                        <div class="buttons-footer d-flex justify-content-end">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                id="buttonCancel">Cancel</button>
+                            <button type="button" class="btn btn-primary" id="buttonSend">Send</button>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-
-            <div class="fila-4-right col-md-6">
-                <div class="Massage">
-                    
-                    <form>
-                    <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    </form>
-                </div>
-            </div>
-
         </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
 
-        <div class="footer bg-light">
-            <div class="buttons-footer d-flex justify-content-end">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="buttonCancel">Cancel</button>
-                <button type="button" class="btn btn-primary" id="buttonSend">Send</button>
-            </div>
-
-        </div>
-
-    </div>
-    </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </body>
 </html>

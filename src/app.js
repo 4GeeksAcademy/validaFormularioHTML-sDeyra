@@ -21,7 +21,32 @@ const message = document.getElementById("message-text");
 const buttonCancel = document.getElementById("buttonCancel");
 const buttonSend = document.getElementById("buttonSend");
 
+let esValido = true;
 
+buttonSend.addEventListener("click", function(e) {
+  e.preventDefault();
+  esValido = true; 
+
+  if (
+    card.value === "" ||
+    cvc.value === "" ||
+    amount.value === "" ||
+    name.value === "" ||
+    lastName.value === "" ||
+    city.value === "" ||
+    state.value === "" ||
+    postalCode.value === "" ||
+    message.value === ""
+  ) {
+    alert("Por favor, completar todos los campos.");
+    esValido = false;
+  }
+
+  if (esValido) {
+    alert("Formulario valido");
+  }
+});
+ 
 
 
 window.onload = function() {
