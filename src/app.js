@@ -5,8 +5,23 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-const cardNumber1 = document.getElementById(validationCustom01)
-const cardNumber2 = document.getElementById(validationCustom02)
+const card = document.getElementById("validationCustom01")
+const cvc = document.getElementById("validationCustom02")
+const amount = document.getElementById("validationCustomUsername")
+const name = document.getElementById("validationCustom03")
+const lastName = document.getElementById("validationCustom04")
+const city = document.getElementById("city");
+const state = document.getElementById("state");
+const postalCode = document.getElementById("postalCode");
+const method1 = document.getElementById("radioDefault1");
+const method2 = document.getElementById("radioDefault2");
+const method3 = document.getElementById("radioDefault3");
+const method4 = document.getElementById("radioDefault4");
+const message = document.getElementById("message-text");
+const buttonCancel = document.getElementById("buttonCancel");
+const buttonSend = document.getElementById("buttonSend");
+
+
 
 
 window.onload = function() {
