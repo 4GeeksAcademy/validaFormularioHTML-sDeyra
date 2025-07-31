@@ -1,10 +1,6 @@
 import "bootstrap";
 import "./style.css";
 
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 const card = document.getElementById("validationCustom01")
 const cvc = document.getElementById("validationCustom02")
 const amount = document.getElementById("validationCustomUsername")
@@ -23,9 +19,9 @@ const buttonSend = document.getElementById("buttonSend");
 
 let esValido = true;
 
-buttonSend.addEventListener("click", function(e) {
+buttonSend.addEventListener("click", function (e) {
   e.preventDefault();
-  esValido = true; 
+  esValido = true;
 
   if (
     card.value === "" ||
@@ -42,14 +38,24 @@ buttonSend.addEventListener("click", function(e) {
     esValido = false;
   }
 
+  if (
+    !method1.checked &&
+    !method2.checked &&
+    !method3.checked &&
+    !method4.checked
+  ) {
+    alert("Selecciona un método de pago.");
+    esValido = false;
+  }
+
   if (esValido) {
-    alert("Formulario valido");
+    console-log("Formulario valido");
   }
 });
- 
 
 
-window.onload = function() {
+
+window.onload = function () {
   //write your code here
   console.log("Hello Rigo from the console!");
 };
