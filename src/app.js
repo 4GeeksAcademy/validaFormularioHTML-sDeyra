@@ -34,6 +34,7 @@ buttonSend.addEventListener("click", function (e) {
     postalCode.value === "" ||
     message.value === ""
   ) {
+    document.getElementById("alerta").style.display = "block";
     alert("Por favor, completar todos los campos.");
     esValido = false;
   }
@@ -49,7 +50,7 @@ buttonSend.addEventListener("click", function (e) {
   }
 
   if (esValido) {
-    console-log("Formulario valido");
+    console.log("Formulario valido");
   }
 });
 
